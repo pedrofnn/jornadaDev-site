@@ -1,0 +1,65 @@
+/*Containers*/
+.main-sobre{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.main-sobre .titulo-container{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.card-container .texto-container{
+    max-width: 500px;
+    width: 50%;
+    flex:0 1 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.img-container{
+    max-width: 340px;
+    min-width: 250px;
+    min-height: 215px;
+    flex: 1 1 auto;
+}
+.banner-final{
+    width: 100%;
+    height: 130px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white
+}
+
+/*Texts*/
+.titulo-container h1{
+    margin: 10px 0 20px;
+}
+
+
+
+
+
+
+@media(width >= 835px){
+    .orderm-inversa .img-container{
+        order: 1;
+    }
+    .orderm-inversa .texto-container{
+        order: 2;
+    }
+}

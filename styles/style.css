@@ -74,11 +74,26 @@ main section {
     max-width: 450px;
     padding: 15px;
 }
-
+.main-container h1{
+    margin-bottom: 20px;
+}
+.main-container p {
+    margin-bottom: 40px;
+}
 h1 {
     font-family: "Mulish", sans-serif;
     font-size: 49px;
-    margin-bottom: 45px;
+    font-weight: 550;
+}
+h2{
+    font-family: "Mulish", sans-serif;
+    font-size: 32px;
+    font-weight: 520;
+}
+h3 {
+    font-family: "Mulish", sans-serif;
+    font-size: 30px;
+    font-weight: 520;
 }
 
 .break-row {
@@ -93,12 +108,15 @@ main p {
     font-size: 18px;
     line-height: 30px;
     font-family: "Open Sans", sans-serif;
-    margin-bottom: 45px;
 }
+.main-container .img-container{
+    max-width: 434px;
+    min-width: 250px; 
+}
+  
 main .img-container{
     flex: 1 1 250px;
-    max-width: 434px;
-    min-width: 250px;   
+    
 }
 main .img-container img{
     width: 100%;
