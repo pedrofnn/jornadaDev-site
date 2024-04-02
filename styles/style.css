@@ -2,6 +2,8 @@ body{
     margin: 0;
     min-height: 100vh;
     position: relative;
+    overflow: auto;
+    height: 100%;
 }
 
 /*Header*/
@@ -58,6 +60,7 @@ nav li .active-link{
 /*Main*/
 main{
     overflow: auto;
+    padding-bottom: 60px;
 }
 
 main .main-container {
@@ -65,7 +68,6 @@ main .main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
 }
 main section {
     flex: 1 1 400px;
@@ -132,17 +134,19 @@ footer{
     bottom: 0;
     right: 0;
     height: 60px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
     
 }
 
 footer p{
+    width: 330px;
     font-family: "Open Sans", sans-serif;
     font-size: 18px; 
     text-align: center; 
     margin: 0;
-
-    
 }
 
 footer p a{

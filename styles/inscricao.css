@@ -1,0 +1,169 @@
+/*Containers*/
+.form-container{
+    max-width: 450px;
+    min-width: 290px;
+    width: 90%;
+    height: fit-content;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow:0 0 10px #00000050;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.form-container form{
+    width: 95%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.input-container{   
+    width: 100%;
+    position: relative;
+}
+.input-campo{
+    position: relative;
+}
+.input-campo:first-child{
+    width: 50%;
+    flex-grow: 1;
+}
+.input-campo:last-child{
+    width: 37%;
+    min-width: 145px;
+    flex-grow: 1;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;    
+    column-gap: 13%;
+    row-gap: 30px;
+}
+/*Titles*/
+.form-container h1{
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    margin: 30px 0 40px;
+    height: fit-content;
+}
+
+/*Inputs*/
+.input-container .input-underline{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    min-height: 28px;
+    padding: 0;  
+    border:none;
+    border-bottom: 2px solid #00000041;
+}
+
+.input-underline:focus{
+    outline: none;
+    border-color: #3498db ;
+}
+input#nascimento{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 680;
+}
+input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+    vertical-align:bottom;
+}
+/*Labels*/
+label{
+    font-size: 16px;
+    font-weight: 650;
+    font-family: "Open Sans", sans-serif;
+}
+
+.input-container .input-underline ~ label{
+    top: 5px;
+    left: 0;
+    position: absolute;
+    transition:transform 0.5s, font-size 0.5s, font-weight 0.5s;
+    
+}
+.input-container .input-underline:focus ~ label, 
+.input-container .input-underline:valid ~ label{
+    font-size: 14px;
+    transform: translateY(-18px);
+    font-weight: 400;
+    
+}
+.label-top {
+    font-size: 14px;
+    transform: translateY(-18px);
+    font-weight: 400;
+}
+.termos-texto{
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    vertical-align: bottom;
+}
+.termos-texto a{
+    color: #3498db;
+    text-decoration: none;
+}
+.termos-texto a:active{
+    color: #0064a7
+}
+/*Button*/
+form button{
+    margin: 30px 0;
+}
+button#enviar{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #5B3FFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#enviar:hover{
+    background-color:  #4527f3;
+    cursor: pointer;
+}
+
+button#enviar:active {
+    background-color:  #3211f1;
+    color: #ececec;
+}
+button .btn-text{
+    width: 70%;
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+button .arrow{
+    width: 30%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.arrow svg{
+    width:18px; 
+    height:27px;
+    stroke: white;
+    stroke-width: 2;
+}
+button#enviar:active svg{
+    stroke: #ececec
+}
