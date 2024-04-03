@@ -205,6 +205,10 @@ footer p a{
     }
     nav {
         flex-basis: 100%;
+        display: none;
+    }
+    .visible{
+        display: initial;
     }
 
    nav ul li{
